@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daebak Chickeng</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="image/logo.png" class="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li>
+                    <a href="menu.html">MENU</a>
+                    <ul class="dropdown">
+                        <li><a href="single.html">Single</a></li>
+                        <li><a href="double.html">Double</a></li>
+                        <li><a href="combo.html">Combo</a></li>
+                        <li><a href="kids.html">Kids</a></li>
+                        <li><a href="newset.html">New Sets</a></li>
+                        <li><a href="box.html">Box</a></li>
+                        <li><a href="drinks.html">Drinks</a></li>
+                        <li><a href="addons.html">Add-Ons</a></li>
+                    </ul>
+                </li>
+                <li><a href="promotions.html">PROMOTIONS</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="feedback.html">FEEDBACK</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="location.html">LOCATION</a></li>
+            </ul>
+        </div> 
+        
+    </div>
+    
+
+    <section id="Slider Promotion">
+        <div class="home-sci">
+            <a href="https://www.facebook.com/daebakchickeng?mibextid=LQQJ4d" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/daebakchickeng" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://x.com/daebakchickeng?s=21" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.tiktok.com/@daebakchickeng?_t=8numDcfYGmd&_r=1" target="_blank"><i class='bx bxl-tiktok'></i></a>
+        </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <img src="image/slider1.PNG" style="width: 100%;">
+            </div>
+    
+            <div class="mySlides">
+                <img src="image/slider2.PNG" style="width: 100%;">
+            </div>
+            
+            <div class="mySlides">
+                <img src="image/slider3.JPG" style="width: 100%;">
+            </div>
+    
+            <div class="mySlides">
+                <img src="image/slider4.JPG" style="width: 100%;">
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change slide every 4 seconds
+        }
+    </script>
+
+    <section class="main1">
+        <div class="road-to-menu">
+                <h1> Are You Hungry?</h1>
+                <h3>Don't Wait!</h3>
+                <p>Lets start to order food now</p>
+                <a href="menu.html" class="btn">View Menu</a>
+            </div>
+        </div>
+    
+    </section>
+
+    <section class="halal">
+        <div class="halal-product">
+            <h1>TRUST</h1>
+            <h3>Our Halal Product</h3>
+            <a href="pdf/daebakhalalcert.pdf" class="btn" target="_blank">Halal Policy</a> 
+        </div>
+
+    </section>
+
+    <section class="Moment">
+        <p class="heading-p-moment">Happy</p>
+        <h1 class="heading-moment">Moment</h1>
+        <div class="container moment-container">
+            <div class="moment">
+                <img src="image/moment1.JPG" style="width: 70%;">
+            </div>
+
+            <div class="moment">
+                <img src="image/moment2.JPG" style="width: 70%;">
+            </div>
+
+            <div class="moment">
+                <img src="image/moment3.JPG" style="width: 70%;">
+            </div>
+
+            <div class="subheading">
+                <a href="celebration.html" class="btn">Celebration</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="team">
+        <h1 class="heading-team">OUR CREW</h1>
+        <div class="container team-container">
+            <div class="team">
+                <img src="image/team1.PNG" style="width: 100%;">
+            </div>
+
+            <div class="team">
+                <img src="image/team2.jpg" style="width: 100%;">
+            </div>
+
+            <div class="team">
+                <img src="image/team3.jpg" style="width: 100%;">
+            </div>
+
+            <div class="team">
+                <img src="image/team4.PNG" style="width: 100%;">
+            </div>
+
+
+        </div>
+
+        <div class="subheading-team">
+            <a href="gallery.html" class="btn">Team</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer_main">
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>Kemaman</p>
+                <p>KTCC</p>
+                <p>Dungun</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Quick Link</h2>
+                <p>Home</p>
+                <p>Menu</p>
+                <p>Promotion</p>
+                <p>News</p>
+                <p>Feedback</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact Us</h2>
+                <p>+09-5425848</p>
+                <p>+06-2241015</p>
+                <p>daebakchickeng@gmail.com</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Our Services</h2>
+                <p>Fast Delivery</p>
+                <p>Easy Payment</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Follows</h2>
+                <a href="https://www.facebook.com/daebakchickeng?mibextid=LQQJ4d" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/daebakchickeng" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://x.com/daebakchickeng?s=21" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.tiktok.com/@daebakchickeng?_t=8numDcfYGmd&_r=1" target="_blank"><i class='bx bxl-tiktok'></i></a>
+            </div>                                  
+
+        </div>
+    </footer>
+   
+
+</body>
+</html>
+
+       
+
+
+
